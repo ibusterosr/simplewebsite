@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="refresh" content="1; URL=https://twitter.com">
@@ -8,9 +8,10 @@
     <h1>Destination 2</h1>
 
     <script>
-        // Increment the counter when someone visits destination2
-        var counter = localStorage.getItem('visitCounter') || 0;
-        localStorage.setItem('visitCounter', ++counter);
+        // Check if the counter is already set in local storage for destination2
+        var counter = localStorage.getItem('destination2Counter') || 0;
+        localStorage.setItem('destination2Counter', ++counter);
+        document.write("<p>Visits: " + counter + "</p>");
     </script>
 </body>
 </html>
