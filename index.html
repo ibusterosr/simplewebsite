@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Website</title>
+</head>
+<body>
+
+    <h1>Select Destination</h1>
+
+    <ul>
+        <li><a href="destination1.html">Destination 1</a></li>
+        <li><a href="destination2.html">Destination 2</a></li>
+    </ul>
+
+    <script>
+        // Check if the counter is already set in local storage
+        var counter = localStorage.getItem('visitCounter') || 0;
+        document.write("<p>Visits: " + counter + "</p>");
+    </script>
+
+</body>
+</html>
